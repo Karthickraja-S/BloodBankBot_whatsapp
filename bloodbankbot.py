@@ -13,7 +13,7 @@ def bot():
     def getdatabase():
         from pymongo import MongoClient
         import pymongo
-        connection_string = "mongodb+srv://karthi:karthi1412@cluster0.grst1.mongodb.net/bloodvolunteers?retryWrites=true&w=majority"
+        connection_string = "mongodb+srv://karthi:<mypasswordforthatdatabasecreated>@cluster0.grst1.mongodb.net/bloodvolunteers?retryWrites=true&w=majority"
         client = MongoClient(connection_string)
         return client['bloodvolunteers']
 
